@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div2{
+            display:flex;
+            align-items: center;
+            padding-top:5rem;
+            padding-left:15rem;
+          
+          
+        }
+        div3{
+
+            display:flex;
+            align-items: center;
+            justify-content:space-evenly
+        }
+
+        .card{
+            border:2px ;
+            height:5rem;
+            width:5rem;
+            text-align: center;
+
+        }
+        h2{
+            color:blue;
+        }
+
+        .solid{
+            border:2px solid !important;
+        }
+        div1{
+            color:red;
+        }
+        label{
+            color: black;
+        }
+        h1{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+      
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<br>
+
+    <h1>Stating with basics</h1>
+    <div3>
+    <div2><div>&nbsp&nbsp &nbsp &nbsp 0
+        <div class="card solid"><h1>1</h1></div>
+        <div class="card solid"><h1>4</h1></div>
+        <div class="card solid"><h1>7</h1></div>
+        </div>
+        <div>&nbsp&nbsp &nbsp &nbsp 1 <div class="card solid"><h1>2</h1></div>
+        <div class="card solid"><h1>5</h1></div>
+        <div class="card solid"><h1>8</h1></div></div>
+        <div> &nbsp&nbsp &nbsp &nbsp 2
+        <div class="card solid"><h1>3</h1></div>
+        <div class="card solid"><h1>6</h1></div>
+        <div class="card solid"><h1>9</h1></div></div>
+    </div2>
+   <h2> &nbsp&nbsp &nbsp &nbsp &nbspFind the Sum of product of 2nd maximum and
+    &nbsp &nbsp&nbsp  &nbsp &nbsp  &nbsp minimum number of digit in a straight Line</h2>
+
+    </div3>
+    
+   <br>
+   <br>
+
+    <h3>
+        <label></label> &nbsp &nbsp&nbsp  &nbsp &nbsp SUM &nbsp &nbsp </label> 
+         <input type="number" class="ans"> 
+         <button onclick="scrollToBottom()">Submit</button></h3>
+   
+   <div>
+    &nbsp &nbsp
+    &nbsp &nbsp
+    <button type="button" class="btn btn-info" id="clue">CLUE</button>    &nbsp &nbsp
+    <button type="button" class="btn btn-warning" id="clue2">CLUE2</button>
+   </div>
+     <br>
+   <script>
+    let button=document.querySelector("button");
+    let clue=document.querySelector("#clue")
+    let clue2=document.querySelector("#clue2")
+    let t=3;
+    // console.log(ans.value);
+clue.addEventListener("click",(e)=>{
+    let div2=document.createElement("div");
+         div2.innerHTML=`U can also use diagonal element`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+})
+
+clue2.addEventListener("click",(e)=>{
+    let div2=document.createElement("div");
+         div2.innerHTML=`Minimum  product is 28`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+})
+
+    button.addEventListener("click",(e)=>{
+        let input=document.querySelector("input");
+if(input.value==="189"){
+    t=3;
+        let div1=document.createElement("div");
+        //<h1>Right ans ${input.value}</h1>
+        div1.innerHTML=`<h3> CORRECT ANS</h3>
+     <div>   &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp
+        <img class="photo" src="https://img.freepik.com/premium-vector/arrow-icon-vector-hand-drawn-arrow-sketch-handmade-doodle-swipe-up-symbol-sign-isolated-white-background-simple-logo-vector-design-illustration-image_549897-834.jpg?w=740" alt=" img reload" srcset=""  width="500" height="600"></div>
+      <h2> <label>&nbsp &nbsp&nbsp  &nbsp &nbsp The Word Corresponding to previous mising number in straight line &nbsp &nbsp </label> </h2>  
+      <br>
+      &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp  <input type="text" class="word"> 
+         <button class="sub" >SUBMIT</button></h3>
+         <br>
+         &nbsp &nbsp
+         &nbsp &nbsp
+         <button type="button" class="btn btn-info"    id="clue3">CLUE3</button> &nbsp &nbsp
+         <button type="button" class="btn btn-warning" id="clue4">CLUE4</button>`;
+        
+           
+
+        let container=document.querySelector("body");
+      container.appendChild(div1);
+      let photo=document.querySelector(".photo");
+            photo.scrollIntoView();
+       let clue3=document.querySelector("#clue3");
+      clue3.addEventListener("click",(e)=>{
+           let div2=document.createElement("div");
+         div2.innerHTML=`7`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+       
+		
+   
+        })
+
+
+        let clue4=document.querySelector("#clue4");
+        clue4.addEventListener("click",(e)=>{
+           let div2=document.createElement("div");
+         div2.innerHTML=`Mobile phone`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+   
+       })
+let subm=document.querySelector(".sub");
+let word=document.querySelector(".word");
+      subm.addEventListener("click",(e)=>{
+        console.log("Submit");
+
+        console.log(word.value);
+        if(word.value==="pqrs"){
+
+        let div2=document.createElement("div");
+         div2.innerHTML=`<h2>WELL DONE U HAVE COMPLETED IT<h2>
+            <button class="next">NEXT</button>`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+         }
+         else{
+            let div2=document.createElement("div");
+         div2.innerHTML=`<h2>wrong ans <h2>`;
+        
+         let container=document.querySelector("body");
+         container.appendChild(div2);
+         }
+})
+}
+else{
+
+if(t>0){
+    t=t-1;
+    let div1=document.createElement("div");
+        div1.innerHTML=`<h3 color:red >Wrong ans U have ${t} more try </h3>`;
+        
+        let container=document.querySelector("body");
+      container.appendChild(div1);
+}
+if(t==0){
+    let div1=document.createElement("div");
+        div1.innerHTML=`RETURN TRY AGAIN`;
+        
+        let container=document.querySelector("body");
+      container.appendChild(div1);
+}
+}
+// setInterval(duration, 1000);
+    })
+    // function scrollToBottom() {
+	// 		window.scrollTo({
+	// 			top: document.body.scrollHeight,
+	// 			behavior: 'smooth'
+	// 		});
+
+    //     }
+   </script>
+</body>
+</html>
